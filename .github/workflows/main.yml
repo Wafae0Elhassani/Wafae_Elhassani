@@ -14,6 +14,11 @@ jobs:
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
+        
+    - name: Show current directory status
+      run: |
+        git status
+        ls -al
 
     - name: Stage changes
       run: |
@@ -21,7 +26,7 @@ jobs:
 
     - name: Commit changes
       run: |
-        git commit -m "Modify portfolio"
+        git diff-index --quiet HEAD || git commit -m "Modify portfolio"
 
     - name: Push changes
       run: |
