@@ -22,11 +22,11 @@ jobs:
 
     - name: Stage changes
       run: |
-        git add .
+        git add -A
 
     - name: Commit changes
       run: |
-        git diff-index --quiet HEAD || git commit -m "Modify portfolio"
+        git commit -m "Modify portfolio" || echo "No changes to commit"
 
     - name: Push changes
       run: |
