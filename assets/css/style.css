@@ -370,7 +370,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 /*.single-about-img */
 .single-about-img {
     position: relative;
-    box-shadow: 0 5px 20px rgba(14, 25, 80, .30);
+    box-shadow: 0 5px 20px;
 }
 
 .single-about-img:before {
@@ -380,7 +380,6 @@ nav.navbar.bootsnav .navbar-toggle i {
     left: 0;
     width: 109%;
     height: 100%;
-    background: rgba(31, 44, 108, .3);
 }
 
 .single-about-img img {
@@ -1086,4 +1085,3 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 /*========================Thank you=================*/
-
